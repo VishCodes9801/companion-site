@@ -11,33 +11,43 @@ p,li{color:var(--ink)}.muted{color:var(--muted)}section{background:var(--sheet);
 a{color:var(--accent)}
 </style></head><body><main>
 <h1>Privacy Policy</h1>
-<p class="muted">Companion: Diabetes Journal · Effective September 8, 2026</p>
-<p>Companion is built so that your health information stays with you. There is no Companion account, no Companion server, and nothing you log is sent to us. This page says exactly what the app stores, what leaves your device, and why.</p>
+<p class="muted">Companion: Diabetes Journal · Effective October 12, 2026</p>
+<p>Companion is made by Vishnu Purushothaman, an independent developer. It is built so that your health information stays with you. There is no Companion account and no Companion server, and nothing you log is sent to us. This page says exactly what the app stores, what leaves your device, who receives it, and how to delete it.</p>
 
 <section><h2>What the app stores</h2>
-<p>Meals, glucose readings, activity, medications and doses, questions for your doctor, and your preferences are stored on your device in the app's own database. If you turn on <strong>Sync with iCloud</strong>, that data is also stored in your private iCloud database, encrypted in transit and at rest and readable only by your Apple Account. We cannot read it. iCloud sync is off by default.</p></section>
+<p>Everything you enter is stored on your iPhone in the app's own database: glucose readings, meals and foods (with any photo you attach to a meal), activity, medications and doses (including injection sites and any reason you note for a skipped dose), lab results such as A1C, supplies and checkup dates, your sick-day plan, questions for your doctor, today's Ask Companion conversation, your name and diabetes type if you give them, and your preferences.</p>
+<p>A small summary (today's readings, the carb total and the time of the next dose, never food or medication names) is shared with Companion's widgets and, if you have one, your paired Apple Watch, so they can show it. A reading you log on the watch is sent to your iPhone over Apple's WatchConnectivity.</p>
+<p>Companion does not sync the journal to iCloud or to any server. Like every app's data, it is included in your iPhone's own backups if you make them (iCloud Backup, or a backup on your computer), and in any CSV export you make yourself.</p></section>
 
 <section><h2>What leaves your device</h2>
 <ul>
-<li><strong>Barcode lookups.</strong> When you scan a product barcode, the barcode number alone is sent to Open Food Facts to fetch nutrition facts. No personal or health data is sent with it.</li>
-<li><strong>Photo meal recognition (optional, off by default).</strong> If you enable it, a reduced-size copy of the meal photo you choose is sent to the recognition service so it can list the foods. Nothing else is sent: no glucose, medication, notes, or name. You review every result before anything is logged.</li>
-<li><strong>Nothing else.</strong> Label scanning, voice logging, insights, the doctor report, and Ask My Data all run on the device. Apple Intelligence answers, where available, are generated on the device.</li>
+<li><strong>Barcode lookups (Open Food Facts).</strong> When you scan a product barcode, the barcode number alone is sent to <a href="https://world.openfoodfacts.org/privacy">Open Food Facts</a>, a non-profit food database, to fetch its nutrition facts. No health data, name or identifier goes with it. Like any website, Open Food Facts receives your device's IP address with the request. Searching the built-in food list (USDA FoodData Central) and reading nutrition labels happen on the device.</li>
+<li><strong>Photo meal recognition (not offered in the current App Store version).</strong> If it is offered in a later version, it will be off by default and will work only after you agree on its consent screen. Each time you then choose to recognize a meal, a reduced-size copy of that one photo (without location data) is sent to <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>, the company that makes the Claude AI model, to list the foods. Nothing else is sent: no glucose, medication, notes, or name. You review every result before anything is logged, and you can withdraw consent at any time in Profile → Photo recognition. This policy will be updated, with a new date, before that happens.</li>
+<li><strong>What you choose to send.</strong> If you email the doctor report or text someone from Low mode, Apple's Mail or Messages sheet opens with the content filled in; nothing is sent until you press Send, and it goes only to the people you choose.</li>
+<li><strong>Nothing else.</strong> Voice logging, insights, the doctor report, and Ask Companion all run on the device. Where Apple Intelligence is available, its answers are generated on the device. If you ask through Siri, Apple processes the request as described in Apple's privacy policy.</li>
 </ul></section>
 
 <section><h2>Apple Health</h2>
-<p>With your permission, Companion reads the Health categories you choose, which can include your medication list and doses and your State of Mind entries, and can write glucose readings and the meals you log back to Health. Health data is used only to draw your timeline and summaries. It is never sent anywhere. You can change access at any time in the Health app under Sharing.</p></section>
+<p>With your permission, Companion reads the Health categories you choose: blood glucose, steps, walking and running distance, exercise minutes, workouts, State of Mind, and (on iOS 26) the medications you choose to share and their doses. If you allow it, it writes the glucose readings and meals (carbohydrate, protein, fat, fiber, sugar and calories) you log back to Health. Health data is used only to show your own journal to you. It is never used for advertising or marketing, never sold, and never sent to us or to any third party, and not synced to iCloud by Companion. You can change access at any time in the Health app under Sharing.</p></section>
+
+<section><h2>Third parties</h2>
+<p>Companion contains no third-party analytics, advertising, or tracking code, and it does not track you across apps or websites. The only outside service that receives anything from the current version is Open Food Facts (a barcode number), as described above; it handles that request under its own privacy policy, linked above. We do not share, sell, or rent your data to anyone.</p></section>
 
 <section><h2>Analytics</h2>
-<p>Companion records that features were used, for example "a meal was logged". It never records what you logged. In the current version these events stay on the device and are not transmitted.</p></section>
+<p>Companion may note on the device that a feature was used, for example "a meal was logged". It never records what you logged. These notes stay on the device and are not transmitted.</p></section>
 
 <section><h2>Purchases</h2>
 <p>Companion Plus is sold through Apple. Apple handles payment and shares no payment details with us. Your subscription status is checked on your device.</p></section>
 
-<section><h2>Your control</h2>
-<p><strong>Export</strong> everything as CSV from Profile. <strong>Delete all data</strong> from Profile removes everything Companion stored on the device and, if sync is on, in your private iCloud database. Deleting the app removes its local data.</p></section>
+<section><h2>Keeping and deleting your data</h2>
+<p>Your journal is kept until you delete it. You can change or delete any entry from the entry itself. <strong>Delete all data</strong> in Profile removes everything you logged and wrote down, including your Ask conversation, your sick-day plan and the contacts you saved, from the device. Your name and preferences stay until you delete the app. Deleting the app removes all of its data from the device. Data you allowed Companion to write to Apple Health stays in Health until you delete it there. Because we hold no copy of your journal, there is nothing for us to delete on our side; if you email us, we will delete your email on request.</p>
+<p>To withdraw a permission at any time: Apple Health access in the Health app (Sharing → Apps → Companion), notifications, camera, microphone and speech recognition in the Settings app. <strong>Export</strong> everything as CSV from Profile whenever you like.</p></section>
+
+<section><h2>Children</h2>
+<p>Companion does not collect personal information from anyone, including children. A parent or guardian who sets it up for a child can delete everything as described above.</p></section>
 
 <section><h2>Not medical advice</h2>
-<p>Companion organizes information you provide. It does not diagnose, prescribe, calculate doses, or replace advice from your healthcare team.</p></section>
+<p>Companion organizes information you provide. It does not diagnose, prescribe, calculate doses, or replace advice from your healthcare team. Check with your doctor before making medical decisions.</p></section>
 
 <section><h2>Contact</h2>
 <p>Questions about privacy: <a href="mailto:vishnusaip25@gmail.com">vishnusaip25@gmail.com</a>. See also the <a href="support.html">support page</a>.</p></section>
