@@ -1,0 +1,24 @@
+:root{--ruling:45%;--paper:#F5EFE4;--sheet:#FFFBF3;--ink:#1E1B18;--muted:#6E665C;--rule:#E4DACB;--accent:#4F7A5A;--brick:#B8412E}
+@media (prefers-color-scheme:dark){:root{--ruling:22%;--paper:#16130F;--sheet:#201C16;--ink:#F3ECDF;--muted:#A69C8E;--rule:#352F27;--accent:#8DBB98;--brick:#E07A62}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 -apple-system,system-ui,sans-serif;font-variant-numeric:lining-nums;
+  background-image:repeating-linear-gradient(to bottom,transparent 0 31px,color-mix(in srgb,var(--rule) var(--ruling),transparent) 31px 32px)}
+main{max-width:680px;margin:0 auto;padding:40px 20px 80px}
+nav{font-size:15px;margin-bottom:28px}nav a{text-decoration:none}
+h1{font-family:Georgia,"Times New Roman",serif;font-size:38px;line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+h2{font-family:Georgia,"Times New Roman",serif;font-size:24px;margin:36px 0 8px}
+.lead{font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.5}
+.muted,.byline{color:var(--muted)}.byline{font-size:15px;margin:0 0 24px}
+section,.sheet{background:var(--sheet);border:1px solid var(--rule);border-radius:16px;padding:18px 22px;margin:18px 0}
+.answer{border-left:3px solid var(--brick)}
+table{border-collapse:collapse;width:100%;font-size:16px}td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--rule)}
+a{color:var(--accent)}
+.cta{display:inline-block;background:var(--ink);color:var(--paper);text-decoration:none;padding:12px 22px;border-radius:14px;font-weight:600;margin-top:6px}
+.note{font-size:15px;color:var(--muted)}
+.urgent{border:1.5px solid var(--brick)}
+ul.guides{list-style:none;padding:0}ul.guides li{margin:0 0 12px}
+ul.guides a{font-family:Georgia,"Times New Roman",serif;font-size:21px;text-decoration:none;color:var(--ink)}
+footer{margin-top:48px;font-size:14px;color:var(--muted);border-top:1px solid var(--rule);padding-top:16px}
+h1,h2,.lead{font-variant-numeric:lining-nums}
+.shots{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:24px 0}
+img.shot{width:calc(33% - 10px);min-width:180px;max-width:300px;border-radius:22px;border:1px solid var(--rule)}
